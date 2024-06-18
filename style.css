@@ -1,0 +1,54 @@
+
+:root{
+    --yellow: rgb(255, 217, 0);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#front-page,
+#back-page {
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+#front-main-text,
+#back-main-text {
+    letter-spacing: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100dvw;
+    margin-bottom: 1rem;
+}
+
+#back-main-text{
+    color: var(--yellow);
+}
+
+#back-page{
+    background-color: rgba(1, 1, 1, 1);
+}
+
+#front-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--yellow);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 30px;
+    height: 30px;
+}
